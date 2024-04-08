@@ -1,0 +1,54 @@
+
+:host {
+  display: block;
+  width: 100%;
+
+  .slides{
+    width: 100%;
+    height: 530px;
+
+    .slide{
+      width: 100%;
+      height: 100% !important;      
+      background-repeat: no-repeat !important;
+      background-size: cover, contain !important;
+      background-position: center !important;
+      position: relative;
+      border-radius: 8px;
+
+      .nextButton{
+        position: absolute;
+        top: 50%; 
+        right: 20px;
+      }
+
+      #indicators{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        bottom: 20px;
+        width: 200px;
+        .indicator{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border-color: #3c29e2;
+          background-color: #1de1b266;
+          display: inline-block;
+          margin: 0px 5px;
+          cursor: pointer;
+          transition: background-color 0.5s ease-in-out;
+          &.active{
+            background-color: #4f4f4f;
+          }
+        }
+      }
+    }
+    
+  }
+}
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}

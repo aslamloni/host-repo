@@ -1,0 +1,21 @@
+<div class="slides">
+  <div class="slide" >
+        <div>
+          <img  [src]="slides[currentSlide].url" class="d-block w-100" style="height:500px; opacity: 1;" alt="...">
+        </div>         
+    <div id="indicators">
+      @for(slide of slides; track $index){
+      <div (click)="jumpToslide($index)" class="indicator" [ngClass]="{active: $index == currentSlide}">
+      </div>
+      }
+    </div>
+    <button (click)="next()"
+      style="position: absolute; top: 50%; right: 20px; border: 0px; background-color: transparent; font-size: 30px; color: #1de1b266;">
+      <fa-icon [icon]="faArrowRight"></fa-icon>
+    </button>
+    <button (click)="previous()"
+      style="position: absolute; top: 50%; left: 20px; border: 0px; background-color: transparent; font-size: 30px; color: #1de1b266;">
+      <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </button>
+  </div>
+</div>

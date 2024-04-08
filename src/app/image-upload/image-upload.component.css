@@ -1,0 +1,16 @@
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  }
+  
+  .red {
+    background-color: red;
+    z-index: 1;
+  }
+  
+  .blue {
+    background-color: blue;
+    z-index: 2;
+  }
+  

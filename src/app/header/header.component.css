@@ -1,0 +1,43 @@
+/* header.component.css */
+
+.header {
+    background-image:linear-gradient(to right, green , white);
+    color: #ffffff;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .header .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .header .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header .nav-links li a:hover {
+    color: #f1c40f; /* Change color on hover */
+  }
+  

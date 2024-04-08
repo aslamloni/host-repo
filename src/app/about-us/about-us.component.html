@@ -1,0 +1,23 @@
+<div>
+  <div>
+    <p style="margin-top: 2%; font-family: cursive;margin-left: 20px;margin-right: 20px">
+      संजरी वेलफेयर ट्रस्ट, पिछले 7 सालो से समाज के गरीब, जरूरतमंद बच्चो , बेवाओ (विधवा )के मसलो में उनकी मदद करता आ रहा
+      है। एजुकेशन सहायता , चिकित्सा सहायता जैसी कामो में मदद कर रहा है। जरूरतमंद लोगो को कम से कम रेट में दवाइयाँ दिला
+      देना। और समाज में जरूरतमंद बच्चों को किताबें, स्कूल यूनिफॉर्म , स्कूल फीस,भरना नोट्स बुक देना |
+      यह काम करता आ रहा है और आगे भी करता रहेंगा |
+    </p>
+  </div>
+  <div class="card-group" style="margin-top: 3%;">
+    @for(profile of profiles; track $index){
+    <div class="card">
+      <img [src]="profile.url" class="card-img-top" alt="missing picture">
+      <div class="card-body">
+        <h5 class="card-title">{{profile.title}}</h5>
+        <p class="card-text">
+          {{profile.designation}}
+        </p>
+      </div>
+    </div>
+    }
+  </div>
+</div>

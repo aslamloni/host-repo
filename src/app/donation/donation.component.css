@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left-div, .right-div {
+    flex: 1;
+    text-align: left; 
+    margin-top: 4%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .left-div, .right-div {
+      flex: 100%; /* Stack the divs on top of each other on small screens */
+    }
+  }
+  
